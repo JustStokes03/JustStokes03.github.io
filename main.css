@@ -37,9 +37,12 @@ footer {
 }
 
 .footer-links img {
-	width: 32px;
-	height: 32px;
-	transition: transform 0.2s ease;
+  display: inline-block;
+  max-width: 32px;
+  max-height: 32px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .footer-links img:hover {
