@@ -1,3 +1,9 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -11,28 +17,28 @@ nav {
 }
 
 .navbar {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 30px;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar li a {
-  color: #2c3e50;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
+	color: #2c3e50;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s ease;
 }
 
 .navbar li a:hover {
-  color: #3498db;
+	color: #3498db;
 }
 
 #nav-placeholder {
-  overflow: visible;
-  height: auto;
+	overflow: visible;
+	height: auto;
 }
 
 header {
@@ -53,7 +59,7 @@ body {
 }
 
 section {
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto 2rem;
 	padding: 1rem;
 	background: #fff;
@@ -64,6 +70,11 @@ section {
 a {
 	color: #3498db;
 	text-decoration: none;
+}
+
+#footer-placeholder,
+footer {
+	margin-top: auto;
 }
 
 footer {

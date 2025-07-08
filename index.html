@@ -7,96 +7,95 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<div class="page-wrapper">
+		<div id="nav-placeholder"></div>
 
-<div id="nav-placeholder"></div>
+		<header>
+		<h1>Hey, I'm Jake 👋</h1>
+		<p>Problem-solver, system optimizer, and puzzle-loving developer.</p>
+		</header>
 
-<header>
-<h1>Hey, I'm Jake 👋</h1>
-<p>Problem-solver, system optimizer, and puzzle-loving developer.</p>
-</header>
+		<section id="About Me">
+			<h2>About Me</h2>
+			<p>
+			I'm a Computer Science grad from Texas A&M University, where I also minored in Math and Business.
+			Recognized as a Cum Laude graduate, Distinguished Student, and regular on the Dean's Honor Roll,
+			I thrive on turning technical challenges into clean, efficient solutions.
+			</p>
+			<p>
+			Whether I'm spinning up AWS instances, optimizing game overlays, or scripting backend logic, I combine curiosity with precision.
+			I believe great software feels intuitive, looks sharp, and handles edge cases like a pro.
+			</p>
+		</section>
 
-<section id="About Me">
-	<h2>About Me</h2>
-	<p>
-	I'm a Computer Science grad from Texas A&M University, where I also minored in Math and Business.
-	Recognized as a Cum Laude graduate, Distinguished Student, and regular on the Dean's Honor Roll,
-	I thrive on turning technical challenges into clean, efficient solutions.
-	</p>
-	<p>
-	Whether I'm spinning up AWS instances, optimizing game overlays, or scripting backend logic, I combine curiosity with precision.
-	I believe great software feels intuitive, looks sharp, and handles edge cases like a pro.
-	</p>
-</section>
+		<section id="Projects">
+			<h2>Projects</h2>
+			<ul>
+				<li>
+					<strong>Senior Capstone (AWS, SQL, Python, HTML/CSS)</strong> -
+					Cloud infrastructure, backend dev, integration and performance tuning on a team-led web platform.
+				</li>
+				<li>
+					<strong>POS & Inventory System (Java, SQL, Python)</strong> -
+					Desktop + web demo system with Python-driven auto-populating database tools.
+				</li>
+			</ul>
+		</section>
 
-<section id="Projects">
-	<h2>Projects</h2>
-	<ul>
-		<li>
-			<strong>Senior Capstone (AWS, SQL, Python, HTML/CSS)</strong> -
-			Cloud infrastructure, backend dev, integration and performance tuning on a team-led web platform.
-		</li>
-		<li>
-			<strong>POS & Inventory System (Java, SQL, Python)</strong> -
-			Desktop + web demo system with Python-driven auto-populating database tools.
-		</li>
-	</ul>
-</section>
+		<section id="Experience">
+			<h2>Experience</h2>
+			<ul>
+				<li>
+					<strong>Investment Real Estate Intern - Culpepper Realty</strong> <em>(Summer 2025)</em><br/>
+					Supported acquisition analysis through site visits and market comps, prepared pro forma projections for residential and commercial listings, and assessed investment feasibility under varying financial models.
+				</li>
+				<li>
+					<strong>Hardware Fuzzing - TAMU Research</strong> <em>(Spring 2024)</em><br/>
+					Combined fuzzing with formal verification to accelerate validation workflows.
+				</li>
+				<li>
+					<strong>IT Intern - MidSouth Electric Co-Op</strong> <em>(Summer 2023)</em><br/>
+					Maintained systems for 200+ clients, assisted in admin tasks, and learned about VM deployments.
+				</li>
+				<li>
+					<strong>Accounting Clerk - Minze CPA</strong> <em>(Summer 2019)</em><br/>
+					Balanced ledgers, reconciled statements, and prepped tax documentation.
+				</li>
+			</ul>
+		</section>
 
-<section id="Experience">
-	<h2>Experience</h2>
-	<ul>
-		<li>
-			<strong>Investment Real Estate Intern - Culpepper Realty</strong> <em>(Summer 2025)</em><br/>
-			Supported acquisition analysis through site visits and market comps, prepared pro forma projections for residential and commercial listings, and assessed investment feasibility under varying financial models.
-		</li>
-		<li>
-			<strong>Hardware Fuzzing - TAMU Research</strong> <em>(Spring 2024)</em><br/>
-			Combined fuzzing with formal verification to accelerate validation workflows.
-		</li>
-		<li>
-			<strong>IT Intern - MidSouth Electric Co-Op</strong> <em>(Summer 2023)</em><br/>
-			Maintained systems for 200+ clients, assisted in admin tasks, and learned about VM deployments.
-		</li>
-		<li>
-			<strong>Accounting Clerk - Minze CPA</strong> <em>(Summer 2019)</em><br/>
-			Balanced ledgers, reconciled statements, and prepped tax documentation.
-		</li>
-	</ul>
-</section>
+		<section id="Skills">
+			<h2>Technical Skills</h2>
+			<p>
+			Languages: Python, C++, Java, SQL, JavaScript, PowerShell<br/>
+			Web: HTML, CSS, LaTeX, Git<br/>
+			Systems: Unix, Linux<br/>
+			Software: Microsoft Word (Certified), Excel & Access (Coursework)<br/>
+			Other: Real Estate Agent's License
+			</p>
+		</section>
 
-<section id="Skills">
-	<h2>Technical Skills</h2>
-	<p>
-	Languages: Python, C++, Java, SQL, JavaScript, PowerShell<br/>
-	Web: HTML, CSS, LaTeX, Git<br/>
-	Systems: Unix, Linux<br/>
-	Software: Microsoft Word (Certified), Excel & Access (Coursework)<br/>
-	Other: Real Estate Agent's License
-	</p>
-</section>
+		<section id="Strengths">
+			<h2>Strengths</h2>
+			<p>
+			🧠 Analytical | 🔍 Detail-Oriented | 👥 Leadership | 🗂️ Organization<br/>
+			From backend bugs to front-facing polish, I focus on making things work right and look right.
+			</p>
+		</section>
 
-<section id="Strengths">
-	<h2>Strengths</h2>
-	<p>
-	🧠 Analytical | 🔍 Detail-Oriented | 👥 Leadership | 🗂️ Organization<br/>
-	From backend bugs to front-facing polish, I focus on making things work right and look right.
-	</p>
-</section>
+		<div id="footer-placeholder"></div>
+	</div>
 
-<div id="footer-placeholder"></div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+		fetch("nav.html")
+			.then(res => res.text())
+			.then(data => document.getElementById("nav-placeholder").innerHTML = data);
 
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-	fetch("nav.html")
-		.then(res => res.text())
-		.then(data => document.getElementById("nav-placeholder").innerHTML = data);
-
-	fetch("footer.html")
-		.then(res => res.text())
-		.then(data => document.getElementById("footer-placeholder").innerHTML = data);
-	});
-</script>
-
-
+		fetch("footer.html")
+			.then(res => res.text())
+			.then(data => document.getElementById("footer-placeholder").innerHTML = data);
+		});
+	</script>
 </body>
 </html>
