@@ -8,12 +8,14 @@
 </head>
 <body>
 
+<div id="nav-placeholder"></div>
+
 <header>
 <h1>Hey, I'm Jake 👋</h1>
 <p>Problem-solver, system optimizer, and puzzle-loving developer.</p>
 </header>
 
-<section>
+<section id="About Me">
 	<h2>About Me</h2>
 	<p>
 	I'm a Computer Science grad from Texas A&M University, where I also minored in Math and Business.
@@ -26,8 +28,8 @@
 	</p>
 </section>
 
-<section>
-	<h2>Featured Projects</h2>
+<section id="Projects">
+	<h2>Projects</h2>
 	<ul>
 		<li>
 			<strong>Senior Capstone (AWS, SQL, Python, HTML/CSS)</strong> -
@@ -40,7 +42,7 @@
 	</ul>
 </section>
 
-<section>
+<section id="Experience">
 	<h2>Experience</h2>
 	<ul>
 		<li>
@@ -62,7 +64,7 @@
 	</ul>
 </section>
 
-<section>
+<section id="Skills">
 	<h2>Technical Skills</h2>
 	<p>
 	Languages: Python, C++, Java, SQL, JavaScript, PowerShell<br/>
@@ -73,7 +75,7 @@
 	</p>
 </section>
 
-<section>
+<section id="Strengths">
 	<h2>Strengths</h2>
 	<p>
 	🧠 Analytical | 🔍 Detail-Oriented | 👥 Leadership | 🗂️ Organization<br/>
@@ -81,20 +83,20 @@
 	</p>
 </section>
 
-<footer>
-	<div class="footer-links">
-		<a href="mailto:jakestokesmanning@gmail.com" target="_blank">
-			<img src="assets/email-icon.png" alt="Email Jake" />
-		</a>
-		<a href="https://www.linkedin.com/in/jakestokesmanning" target="_blank">
-			<img src="assets/linkedin-icon.png" alt="Jake's LinkedIn" />
-		</a>
-		<a href="https://github.com/JustStokes03" target="_blank">
-			<img src="assets/github-icon.png" alt="Jake's GitHub" />
-		</a>
-	</div>
-	<p>&copy; 2025 Jake Manning</p>
-</footer>
+<div id="footer-placeholder"></div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	fetch("nav.html")
+		.then(res => res.text())
+		.then(data => document.getElementById("nav-placeholder").innerHTML = data);
+
+	fetch("footer.html")
+		.then(res => res.text())
+		.then(data => document.getElementById("footer-placeholder").innerHTML = data);
+	});
+</script>
+
 
 </body>
 </html>
