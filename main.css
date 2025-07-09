@@ -69,6 +69,7 @@ body {
 }
 
 section {
+	box-sizing: border-box;
 	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto 2rem;
